@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Project Plan - Collezione Digitale del Guercino</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* Stile per il layout a tutta altezza */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+        }
+
+        /* Stile per il menu laterale */
+       #navbar-example3 {
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+    padding: 1rem;
+   
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+        .nav-link {
+            color: #8B7355;
+            font-weight: bold;
+        }
+
+        .nav-link:hover {
+            color: #6B5A4A;
+        }
+
+        .nav-pills .nav-link.active {
+            background-color: #8B7355;
+            color: white;
+        }
+
+        /* Stile per il contenuto principale */
+       .scrollspy-example-2 {
+            position: relative; /* NECESSARIO per far funzionare ScrollSpy */
+            padding: 1rem;
+            flex: 1;
+            overflow-y: auto;
+            margin-top: 20px;
+            height: 100vh; /* o una altezza fissa sufficiente */
+    }
+
+
+        h2, h5 {
+            color: #8B7355;
+        }
+
+        .section-content {
+            margin-bottom: 2rem;
+        }
+    </style>
+    <link rel="icon" type="image/jpg" href="guercino.jpg">
+
+       <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+       <meta name="DC.Title" content="Collezione Digitale del Guercino" />
+       <meta name="DC.Creator" content="Gian Francesco Barbieri, detto il Guercino" />
+       <meta name="DC.Subject" content="Francesco Contri" />
+       <meta name="DC.Description" content="Collezione digitale delle opere di Gian Francesco Barbieri, detto il Guercino, uno dei più importanti artisti del Barocco italiano." />
+       <meta name="DC.Publisher" content="Collezione Digitale del Guercino" />
+       <meta name="DC.Contributor" content="Studenti, Ricercatori, Appassionati d'arte" />
+       <meta name="DC.Date" content="2024-12-15" />
+       <meta name="DC.Type" content="Collezione Digitale" />
+       <meta name="DC.Format" content="text/html" />
+       <meta name="DC.Identifier" content="https://www.collezionedigitale-guercino.it/collezione.html" />
+       <meta name="DC.Language" content="it" />
+       <meta name="DC.Rights" content="Copyright © 2024 Collezione Digitale del Guercino. Tutti i diritti riservati." />
+</head>
+
+<body>
+    <div class="wrapper">
+       
+
+        <!-- Contenuto principale -->
+        <div class="content">
+            <!-- Menu laterale -->
+            <div class="col-3">
+                <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end sticky-top">
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link" href="#item-1">1. Idea</a>
+                        <a class="nav-link" href="#item-2">2. Brief</a>
+                        <a class="nav-link" href="#item-3">3. Benchmark</a>
+                        <a class="nav-link" href="#item-4">4. Struttura</a>
+                        <a class="nav-link" href="#item-5">5. Layout</a>
+                        <a class="nav-link" href="#item-6">6. Usabilità</a>
+                        <a class="nav-link" href="#item-7">7. Servizi</a>
+                        <a class="nav-link" href="#item-8">8. Bibliografia</a>
+                    </nav>
+                </nav>
+            </div>
+
+            <!-- Contenuto a destra -->
+            <div class="col-9">
+
+
+ <!-- Breadcrumb -->
+        <div class="breadcrumb" style="background-color: lightblue;">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>Web Project Plan</li>
+            </ul>
+        </div>
+
+
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="20" tabindex="0" class="scrollspy-example-2">
+
+                    <div id="item-1" class="section-content">
+                        <h2>1. Idea</h2>
+                        <p>L'idea è quella di creare una **collezione digitale delle opere di Gian Francesco Barbieri, detto il Guercino**, uno dei più importanti artisti del Barocco italiano. Il sito web avrà lo scopo di rendere accessibile al pubblico una raccolta completa delle sue opere, con informazioni dettagliate, immagini ad alta risoluzione e strumenti di navigazione avanzati.</p>
+                        <p>Il sito sarà progettato per essere **intuitivo e responsive**, garantendo un'esperienza utente ottimale su dispositivi mobili e desktop. Sarà possibile esplorare le opere per periodo, tema, tecnica e luogo di conservazione, con l'aggiunta di contenuti multimediali come audio-guide e video esplicativi.</p>
+                    </div>
+
+                    <div id="item-2" class="section-content">
+                        <h2>2. Brief</h2>
+                        <h5>Finalità e obiettivi del progetto</h5>
+                        <p>Il progetto ha l'obiettivo di **valorizzare il patrimonio artistico del Guercino**, rendendo le sue opere accessibili a un pubblico ampio e diversificato. Gli obiettivi principali includono:</p>
+                        <ul>
+                            <li>Digitalizzazione delle opere del Guercino.</li>
+                            <li>Creazione di un sito web moderno e interattivo.</li>
+                            <li>Integrazione di strumenti di navigazione avanzati (timeline, filtri di ricerca...).</li>
+                            <li>Promozione della conoscenza del Guercino e del suo contributo all'arte barocca.</li>
+                        </ul>
+
+                        <h5>Pubblico di riferimento</h5>
+                        <p>Il sito si rivolge a un pubblico ampio, che include:</p>
+                        <ul>
+                            <li><strong>Studiosi e ricercatori</strong>: interessati a studiare le opere del Guercino in modo approfondito.</li>
+                            <li><strong>Studenti</strong>: che utilizzano il sito come risorsa didattica.</li>
+                            <li><strong>Appassionati d'arte</strong>: interessati a scoprire e apprezzare le opere del Guercino.</li>
+                            <li><strong>Pubblico generale</strong>: persone senza conoscenze pregresse che vogliono avvicinarsi all'arte del Guercino.</li>
+                        </ul>
+
+                        <h5>Accesso alla risorsa</h5>
+                        <p>Il sito sarà accessibile da **dispositivi mobili e desktop**, con un design responsive che garantisce un'esperienza utente ottimale su qualsiasi dispositivo. L'accesso sarà **gratuito**, senza barriere di registrazione, per garantire la massima fruibilità.</p>
+
+                        <h5>Contenuti</h5>
+                        <p>Il sito includerà:</p>
+                        <ul>
+                            <li><strong>Immagini ad alta risoluzione</strong> delle opere del Guercino.</li>
+                            <li><strong>Schede descrittive</strong> per ogni opera, con informazioni su titolo, data, tecnica, dimensioni e luogo di conservazione.</li>
+                            <li><strong>Contenuti multimediali</strong>: audio-guide e video esplicativi.</li>
+                            <li><strong>Strumenti di navigazione</strong>: timeline interattiva, filtri di ricerca.</li>
+                        </ul>
+                    </div>
+
+                    <div id="item-3" class="section-content">
+                        <h2>3. Benchmark</h2>
+                        <h5>Idea</h5>
+                        <p>Esistono già alcuni siti web dedicati al Guercino, come la **Pinacoteca Civica di Cento** e la **Web Gallery of Art**, ma spesso mancano di una visione completa e organizzata delle sue opere. Il nostro progetto si distingue per l'integrazione di strumenti di navigazione avanzati e contenuti multimediali.</p>
+
+                        <h5>Contenuti Esistenti</h5>
+                        <ol>
+                            <li><strong>Pinacoteca Civica di Cento</strong>: Offre informazioni sulle opere del Guercino conservate nella sua città natale, ma manca di strumenti di navigazione avanzati.</li>
+                            <li><strong>Web Gallery of Art</strong>: Include diverse opere del Guercino, ma l'interfaccia è datata e manca di contenuti multimediali interattivi.</li>
+                        </ol>
+                    </div>
+
+                    <div id="item-4" class="section-content">
+                        <h2>4. Struttura</h2>
+                        <h5>Mappa dei concetti</h5>
+                        <p>La mappa concettuale del sito è organizzata in sezioni principali:</p>
+                        <ul>
+                            <li><strong>Home Page</strong>: Presentazione del progetto e breve biografia del Guercino.</li>
+                            <li><strong>Collezione</strong>: Raccolta completa delle opere, organizzata per periodo, tema, tecnica e luogo di conservazione.</li>
+                            <li><strong>Biografia</strong>: Sezione dedicata alla vita e alla carriera del Guercino.</li>
+                            <li><strong>Servizi</strong></li>
+                        </ul>
+
+                        <h5>Schema delle dipendenze</h5>
+                        <p>Lo schema delle dipendenze mostra come le diverse sezioni del sito sono collegate:</p>
+                        <ul>
+                            <li>Dalla <strong>Home Page</strong>, gli utenti possono accedere alla <strong>Collezione</strong>, alla <strong>Biografia</strong> e ai <strong>Servizi</strong>.</li>
+                            <li>La <strong>Collezione</strong> è suddivisa in sottosezioni per periodo, tema, tecnica e luogo di conservazione.</li>
+                            <li>La <strong>Biografia</strong> include approfondimenti sulla vita e la carriera del Guercino.</li>
+                            <li>I <strong>Servizi</strong> includono strumenti di navigazione avanzati come la timeline e la mappa geografica.</li>
+                        </ul>
+
+                        <h5>Categorie di un item</h5>
+                        <p>Ogni opera (item) sarà descritta utilizzando le seguenti categorie:</p>
+                        <ul>
+                            <li><strong>Titolo</strong>: Titolo originale e titolo italiano.</li>
+                            <li><strong>Data</strong>: Anno di creazione.</li>
+                            <li><strong>Tecnica</strong>: Tecnica utilizzata (es. olio su tela, affresco).</li>
+                            <li><strong>Dimensioni</strong>: Dimensioni dell'opera.</li>
+                            <li><strong>Luogo di conservazione</strong>: Museo, chiesa o collezione privata.</li>
+                            <li><strong>Descrizione</strong>: Breve descrizione storico-artistica.</li>
+                            <li><strong>Immagine</strong>: Immagine ad alta risoluzione dell'opera.</li>
+                            <li><strong>Audio/Video</strong>: Contenuti multimediali associati (es. audio-guide).</li>
+                        </ul>
+                    </div>
+
+                    <div id="item-5" class="section-content">
+                        <h2>5. Layout</h2>
+                        <h5>HomePage</h5>
+                        <p>La Home Page includerà:</p>
+                        <ul>
+                            <li>Una <strong>hero section</strong> con un'immagine di un'opera famosa del Guercino e un breve testo introduttivo.</li>
+                            <li>Link rapidi alle sezioni principali (<strong>Collezione</strong>, <strong>Biografia</strong>, <strong>Servizi</strong>).</li>
+                            <li>Una sezione con una panoramica delle opere più famose.</li>
+                        </ul>
+                        <p><strong>Esempio Grafico:</strong></p>
+                        <img src="wire1.png" alt="Wireframe Home Page" style="max-width: 100%; height: auto;">
+                        <p><em>Figura 1: Wireframe della Home Page.</em></p>
+                    
+                        <h5>Collezione</h5>
+                        <p>La pagina della Collezione includerà:</p>
+                        <ul>
+                            <li>Filtri di ricerca per periodo, tema, tecnica e luogo di conservazione.</li>
+                            <li>Una griglia di anteprime delle opere, con titolo e immagine.</li>
+                            <li>Paginazione per navigare tra le opere.</li>
+                            <li>Una timeline interattiva che mostra l'evoluzione artistica del Guercino.</li>
+                            <li>Una mappa geografica che indica i luoghi di conservazione delle opere.</li>
+                        </ul>
+                        <p><strong>Esempi Grafici:</strong></p>
+                        <img src="wire2.png" alt="Wireframe Collezione - Filtri e Griglia" style="max-width: 100%; height: auto;">
+                        <p><em>Figura 2: Wireframe della Pagina Collezione (Filtri e Griglia).</em></p>
+                        <img src="wire3.png" alt="Wireframe Collezione - Linea del tempo" style="max-width: 100%; height: auto;">
+                        <p><em>Figura 3: Wireframe della Pagina Collezione (Linea del tempo).</em></p>
+                    
+                        <h5>Biografia</h5>
+                        <p>La pagina della Biografia includerà:</p>
+                        <ul>
+                            <li>Una sezione con la vita e la carriera del Guercino.</li>
+                            <li>Immagini e approfondimenti sul contesto storico e artistico.</li>
+                        </ul>
+                    
+                        <h5>Servizi</h5>
+                        <p>La pagina dei Servizi includerà:</p>
+                        <ul>
+                            <li>Una <strong>timeline interattiva</strong> che mostra l'evoluzione artistica del Guercino.</li>
+                            <li>Una <strong>mappa geografica</strong> che indica i luoghi di conservazione delle opere.</li>
+                            <li>Strumenti di <strong>ricerca avanzata</strong> per filtrare le opere.</li>
+                        </ul>
+                    </div>
+
+
+                    <div id="item-6" class="section-content">
+                        <h2>6. Usabilità</h2>
+                        <h5>Architettura</h5>
+                        <p>Il sito sarà progettato con un'architettura chiara e intuitiva:</p>
+                        <ul>
+                            <li>Menu di navigazione principale in alto, con link alle sezioni principali.</li>
+                            <li>Breadcrumb per aiutare gli utenti a orientarsi.</li>
+                            <li>Design responsive per garantire un'esperienza ottimale su dispositivi mobili e desktop.</li>
+                        </ul>
+
+                        <h5>Aspetto e tipografia</h5>
+                        <p>Il design del sito sarà caratterizzato da:</p>
+                        <ul>
+                            <li>Una palette di colori ispirata al periodo barocco, con tonalità calde e dorate!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!.</li>
+                            <li>Font serif per i titoli e sans-serif per il testo, per garantire leggibilità e coerenza visiva.</li>
+                            <li>Uso di immagini e icone per migliorare l'esperienza visiva.</li>
+                        </ul>
+                    </div>
+
+                    <div id="item-7" class="section-content">
+                        <h2>7. Servizi</h2>
+                        <h5>Strumenti di browsing</h5>
+                        <p>Il sito includerà strumenti di navigazione avanzati:</p>
+                        <ul>
+                            <li><strong>Timeline interattiva</strong>: Mostra l'evoluzione artistica del Guercino.</li>
+                            <li><strong>Mappa geografica</strong>: Indica i luoghi di conservazione delle opere.</li>
+                            <li><strong>Filtri di ricerca</strong>: Permettono di filtrare le opere per periodo, tema, tecnica e luogo di conservazione.</li>
+                        </ul>
+
+                        <h5>Strumenti di interazione</h5>
+                        <p>Il sito includerà strumenti di interazione come:</p>
+                        <ul>
+                            <li><strong>Zoom sulle immagini</strong>: Permette di esplorare i dettagli delle opere.</li>
+                            <li><strong>Audio-guide</strong>: Forniscono approfondimenti sulle opere.</li>
+                            <li><strong>Condivisione sui social media</strong>: Permette agli utenti di condividere le opere preferite.</li>
+                        </ul>
+                    </div>
+
+                    <div id="item-8" class="section-content">
+                        <h2>8. Bibliografia e sitografia</h2>
+                        <ol>
+                            <li><strong>Pinacoteca Civica di Cento</strong>: <a href="https://www.comune.cento.fe.it/pinacoteca" target="_blank">https://www.comune.cento.fe.it/pinacoteca</a></li>
+                            <li><strong>Web Gallery of Art</strong>: <a href="https://www.wga.hu" target="_blank">https://www.wga.hu</a></li>
+                            <li><strong>Wikipedia</strong>: <a href="https://it.wikipedia.org/wiki/Guercino" target="_blank">https://it.wikipedia.org/wiki/Guercino</a></li>
+                            <li><strong>Google Arts & Culture</strong>: <a href="https://artsandculture.google.com" target="_blank">https://artsandculture.google.com</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const container = document.querySelector('.scrollspy-example-2');
+    const navLinks = Array.from(document.querySelectorAll('#navbar-example3 .nav-link'));
+    const sections = navLinks.map(l => document.querySelector(l.getAttribute('href'))).filter(Boolean);
+
+    const TOP_OFFSET = 20;           // deve corrispondere a data-bs-offset
+    const BOTTOM_TOLERANCE = 6;      // px dal fondo per forzare l'ultima sezione
+    const CLICK_LOCK_MS = 1500;      // fallback unlock dopo click
+    const TOP_BUFFER = 6;            // tolleranza in px per considerare "in cima"
+    let lockActive = false;
+    let lockTimer = null;
+    let lastScrollTop = container.scrollTop;
+    let ticking = false;
+
+    // Applica .active correttamente
+    function setActiveById(id) {
+        navLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            link.classList.toggle('active', href === `#${id}`);
+        });
+    }
+
+    // Sezione la cui centro è più vicino al centro visibile del container
+    function getActiveSectionByCenter() {
+        const containerRect = container.getBoundingClientRect();
+        const containerCenter = containerRect.top + containerRect.height / 2;
+
+        let closest = null;
+        let minDistance = Infinity;
+
+        for (const s of sections) {
+            const rect = s.getBoundingClientRect();
+            const sectionCenter = rect.top + rect.height / 2;
+            const distance = Math.abs(containerCenter - sectionCenter);
+            if (distance < minDistance) {
+                minDistance = distance;
+                closest = s;
+            }
+        }
+
+        return closest ? closest.id : null;
+    }
+
+    // Funzione principale di scroll (throttled via rAF)
+    function onScroll() {
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                const currentScroll = container.scrollTop;
+                const maxScroll = container.scrollHeight - container.clientHeight;
+
+                // Se l'utente scrolla significativamente -> sblocca lock
+                if (Math.abs(currentScroll - lastScrollTop) > 4) {
+                    lockActive = false;
+                    clearTimeout(lockTimer);
+                }
+                lastScrollTop = currentScroll;
+
+                if (!lockActive) {
+                    // 1) Se siamo in cima -> prima sezione (fix per il "primo" che non diventava attivo)
+                    if (currentScroll <= TOP_OFFSET + TOP_BUFFER) {
+                        if (sections.length) setActiveById(sections[0].id);
+                    }
+                    // 2) Se siamo al fondo -> ultima sezione
+                    else if (currentScroll + BOTTOM_TOLERANCE >= maxScroll) {
+                        setActiveById(sections[sections.length - 1].id);
+                    }
+                    // 3) Altrimenti: sezione più vicina al centro (gestisce sezioni molto corte)
+                    else {
+                        const activeId = getActiveSectionByCenter();
+                        if (activeId) setActiveById(activeId);
+                    }
+                }
+
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }
+
+    // Aggancio scroll e interazioni che sbloccano
+    container.addEventListener('scroll', onScroll, { passive: true });
+    const unlock = () => { lockActive = false; clearTimeout(lockTimer); };
+    container.addEventListener('wheel', unlock, { passive: true });
+    container.addEventListener('touchstart', unlock, { passive: true });
+    container.addEventListener('pointerdown', unlock, { passive: true });
+
+    // Click sui link -> scroll fluido, lock temporaneo, forzatura active
+    navLinks.forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            const target = document.querySelector(link.getAttribute('href'));
+            if (!target) return;
+
+            lockActive = true;
+            clearTimeout(lockTimer);
+            setActiveById(target.id);
+
+            // Calcola posizione relativa e clampa entro i limiti
+            const containerRect = container.getBoundingClientRect();
+            const targetRect = target.getBoundingClientRect();
+            const currentScroll = container.scrollTop;
+            let offsetTop = targetRect.top - containerRect.top + currentScroll - TOP_OFFSET;
+
+            // clamp
+            const maxScroll = container.scrollHeight - container.clientHeight;
+            if (offsetTop < 0) offsetTop = 0;
+            if (offsetTop > maxScroll) offsetTop = maxScroll;
+
+            container.scrollTo({ top: offsetTop, behavior: 'smooth' });
+
+            lockTimer = setTimeout(() => { lockActive = false; }, CLICK_LOCK_MS);
+        });
+    });
+
+    // Inizializza active al load: se siamo in cima -> prima; altrimenti usa centro o ultima
+    (function initActive() {
+        const cur = container.scrollTop;
+        const maxScroll = container.scrollHeight - container.clientHeight;
+        if (cur <= TOP_OFFSET + TOP_BUFFER) {
+            if (sections.length) setActiveById(sections[0].id);
+            return;
+        }
+        if (cur + BOTTOM_TOLERANCE >= maxScroll) {
+            setActiveById(sections[sections.length - 1].id);
+            return;
+        }
+        const activeId = getActiveSectionByCenter();
+        if (activeId) setActiveById(activeId);
+    })();
+
+    // Ricalcola al resize
+    window.addEventListener('resize', () => {
+        // basso ritardo per stabilità
+        setTimeout(() => { onScroll(); }, 100);
+    });
+});
+</script>
+
+
+
+
+</body>
+</html>
