@@ -540,3 +540,159 @@ footer a:hover {
     width: 95%;
   }
 }
+
+
+/* -------------------------------
+   STILE PAGINA PROJECT PLAN
+   ------------------------------- */
+
+/* Layout generale */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  background-color: #fffaf3;
+}
+
+/* Menu laterale */
+.project-sidebar {
+  background-color: #fdf8f1;
+  border-right: 1px solid #e2c9a1;
+  padding: 1.2rem;
+  width: 260px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+}
+
+.project-sidebar .nav-link {
+  color: #8B7355;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  transition: background 0.2s ease, color 0.2s ease;
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+}
+
+.project-sidebar .nav-link:hover {
+  background-color: #f1e3c9;
+  color: #6B5A4A;
+}
+
+.project-sidebar .nav-link.active {
+  background-color: #8B7355;
+  color: #fff;
+}
+
+/* Contenuto principale */
+.project-content {
+  flex: 1;
+  padding: 2rem 3rem;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+.section-content {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1.5rem;
+}
+
+.section-content h2 {
+  color: #8B7355;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #c7a97a;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.section-content h5 {
+  color: #6B5A4A;
+  font-family: 'Playfair Display', serif;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.section-content p,
+.section-content li {
+  color: #333;
+  line-height: 1.8;
+}
+
+/* Breadcrumb coerente col resto del sito */
+.breadcrumb {
+  background: #fdf8f1;
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  margin: 1.5rem auto;
+  width: 90%;
+  font-size: 0.95rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.breadcrumb ul {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 0;
+}
+
+.breadcrumb li {
+  color: #8B7355;
+}
+
+.breadcrumb li a {
+  color: #8B7355;
+  text-decoration: none;
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb li.active {
+  font-weight: bold;
+  color: #6B5A4A;
+}
+
+/* Immagini e media */
+img {
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .content {
+    flex-direction: column;
+  }
+  .project-sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 2px solid #e2c9a1;
+    box-shadow: none;
+  }
+  .project-content {
+    padding: 1.5rem;
+  }
+  .breadcrumb {
+    width: 95%;
+  }
+}
+
