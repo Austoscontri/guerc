@@ -97,9 +97,15 @@
         <!-- Contenuto principale -->
         <div class="content">
             <!-- Menu laterale -->
-            <div class="col-3">
-                <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end sticky-top">
-                    <nav class="nav nav-pills flex-column">
+            <!-- Bottone menu mobile -->
+<button class="menu-toggle d-md-none btn btn-outline-secondary mb-2" type="button">
+  ☰ Menu
+</button>
+
+<div class="col-3 sidebar-wrapper">
+  <nav id="navbar-example3" class="sidebar h-100 flex-column align-items-stretch pe-4 border-end sticky-top">
+      <nav class="nav nav-pills flex-column">
+
                         <a class="nav-link" href="#item-1">1. Idea</a>
                         <a class="nav-link" href="#item-2">2. Brief</a>
                         <a class="nav-link" href="#item-3">3. Benchmark</a>
@@ -450,6 +456,18 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.querySelector('.menu-toggle');
+  const sidebar = document.querySelector('#navbar-example3');
+
+  if (toggle && sidebar) {
+    toggle.addEventListener('click', () => {
+      sidebar.classList.toggle('open');
+    });
+  }
+});
+</script>
 
 
 </body>
