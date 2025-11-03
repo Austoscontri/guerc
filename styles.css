@@ -730,8 +730,8 @@ img {
 
   .menu-toggle {
     position: fixed;
-    top: 10px;
-    left: 10px;
+    top: 8px;
+    left: 8px;
     z-index: 1100;
     background-color: #8B7355;
     color: #fff;
@@ -742,6 +742,19 @@ img {
 
   .menu-toggle:hover {
     background-color: #6B5A4A;
+  }
+
+  .breadcrumb {
+    margin-top: 50px !important; /* spazio sufficiente per non essere coperta */
+    position: sticky;
+    top: 0;
+    z-index: 900; /* sotto al bottone ma sopra ai contenuti */
+  }
+
+  /* Sidebar sempre sotto al bottone */
+  .sidebar {
+    top: 0;
+    padding-top: 3rem; /* lascia spazio interno per non far coprire i link */
   }
 }
 
