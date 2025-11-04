@@ -1,9 +1,7 @@
 /* ===========================================
-   STYLES.CSS — Versione Ottimizzata (2025)
-   Collezione Digitale del Guercino
+   STYLE.CSS
    =========================================== */
 
-/* RESET BASE */
 * {
   margin: 0;
   padding: 0;
@@ -61,22 +59,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* Card opera */
-.opera-card {
-  border: none;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  background-color: #fff;
-  max-width: 380px;
-  margin: 0 auto;
-}
-
-.opera-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
 
 /* Immagine visibile completamente */
 .img-container {
@@ -96,27 +78,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-.opera-card:hover .img-container img {
-  transform: scale(1.04);
-}
 
-/* Testo e bottone */
-.opera-card h6 {
-  font-weight: 600;
-  font-size: 1rem;
-  margin-bottom: 6px;
-}
-
-.opera-card p {
-  margin-bottom: 10px;
-  color: #666;
-}
-
-.opera-card .btn {
-  border-radius: 20px;
-  font-size: 0.9rem;
-  padding: 6px 14px;
-}
 
 /* -------------------------------------------
    DETTAGLIO OPERA
@@ -250,33 +212,6 @@ body {
   color: #8B7355;
 }
 
-/* -------------------------------------------
-   FOOTER
-   ------------------------------------------- */
-
-footer {
-  background: linear-gradient(135deg, #8B7355, #6B5A4A);
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 3rem;
-  border-top: 4px solid #fff3;
-}
-
-footer ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
-footer ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-footer ul li a:hover {
-  text-decoration: underline;
-}
 
 /* -------------------------------------------
    RESPONSIVE
@@ -292,12 +227,8 @@ footer ul li a:hover {
     max-width: 45%;
   }
 }
-/* -------------------------------------------------
-   STILE MIGLIORATO PAGINA COLLEZIONE
-   (compatibile con Bootstrap e stile generale del sito)
--------------------------------------------------- */
 
-/* --- Header elegante (come Biografia) --- */
+/* --- Header ---*/
 header {
   background: linear-gradient(135deg, #8B7355, #6B5A4A);
   color: #fff;
@@ -351,7 +282,7 @@ nav ul li a.active::after {
   width: 100%;
 }
 
-/* --- Breadcrumb elegante --- */
+/* --- Breadcrumb  --- */
 .breadcrumb {
   background: #fdf8f1;
   border-radius: 8px;
@@ -425,7 +356,6 @@ h2.section-title::after {
 }
 
 /* --- Card Opere --- */
-/* --- CARD OPERE (versione ottimizzata e corretta) --- */
 .card {
   border: 1px solid #e2c9a1;
   border-radius: 12px;
@@ -500,7 +430,7 @@ h2.section-title::after {
 
 
 
-/* --- Sfondo generale e tipografia --- */
+/* --- Sfondo generale --- */
 body {
   background: linear-gradient(to bottom, #faf7f2, #f3f0ea);
   color: #333;
@@ -627,7 +557,7 @@ footer a:hover {
   line-height: 1.8;
 }
 
-/* Breadcrumb coerente col resto del sito */
+/* Breadcrumb  */
 .breadcrumb {
   background: #e6f0fa; /* stesso colore di sfondo */
   border-radius: 8px;
@@ -757,5 +687,4 @@ img {
     padding-top: 3rem; /* lascia spazio interno per non far coprire i link */
   }
 }
-
 
